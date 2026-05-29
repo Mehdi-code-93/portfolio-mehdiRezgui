@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import type { Project, ProjectImageAlign, ProjectTextAlign } from "@/data/types";
 import type { ProjectCellSize } from "@/lib/project-grid";
+import { getProjectPath } from "@/lib/projects";
 import { cn } from "@/lib/utils";
 
 type ProjectCardProps = {
@@ -51,7 +52,7 @@ export function ProjectCard({ project, size }: ProjectCardProps) {
       className="group relative flex h-full min-h-[400px] w-full flex-col overflow-hidden rounded-[2.5rem] p-8 md:min-h-[440px] md:p-10"
     >
       <Link
-        href={project.href}
+        href={getProjectPath(project.id)}
         className="absolute inset-0 z-20 rounded-[2.5rem] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background"
         aria-label={`Voir le projet ${project.title}`}
       />
