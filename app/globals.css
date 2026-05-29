@@ -1,26 +1,87 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --font-sans: var(--font-inter), sans-serif;
+  --font-title: var(--font-baskerville-sans), serif;
+  --font-mono: var(--font-geist-mono), monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+:root {
+  --background: #FCF9F6;
+  --foreground: #0f172a;
+  --primary: #12A594;
+  --primary-foreground: #f0fdfa;
+  --card: #ffffff;
+  --card-foreground: #0f172a;
+  --border: #e2e8f0;
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  --project-title: #1e293b;
+  --project-subtitle: #475569;
+  --project-mysnap: #f3e3d6;
+  --project-myspotify: #ebe4f7;
+  --project-restogenerator: #f5e89a;
+  --project-mynetflix: #d4ede6;
+  --project-mockup-light: #ffffff;
+  --project-mockup-dark: #121212;
+}
+
+.dark {
+  --background: #0b1120;
+  --foreground: #f1f5f9;
+  --primary: #2dd4bf;
+  --primary-foreground: #042f2e;
+  --card: #111827;
+  --card-foreground: #f1f5f9;
+  --border: #1e293b;
+  --muted: #1e293b;
+  --muted-foreground: #94a3b8;
+  --project-title: #f8fafc;
+  --project-subtitle: #cbd5e1;
+  --project-mysnap: #2d2640;
+  --project-myspotify: #3d2e28;
+  --project-restogenerator: #3d3820;
+  --project-mynetflix: #1e3330;
+  --project-mockup-light: #1a1f2e;
+  --project-mockup-dark: #0a0a0a;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-title;
+  }
+  span {
+    @apply font-mono
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@utility animate-marquee {
+  animation: marquee 35s linear infinite;
 }
