@@ -39,7 +39,7 @@ export const projects: Project[] = [
     repoUrl: "#",
     accent: "var(--project-mynetflix)",
     image: "/assets/imgNetflix1.jpeg",
-    mockupBg: "var(--project-mockup-dark)",
+    mockupBg: "var(--project-mockup-light)",
     summary:
       "Clone de Netflix développé en React, connecté à une API externe pour afficher catalogues, catégories et fiches de contenus.",
     description: [
@@ -99,7 +99,7 @@ export const projects: Project[] = [
     repoUrl: "#",
     accent: "var(--project-myspotify)",
     image: "/assets/imgSpotify.jpeg",
-    mockupBg: "var(--project-mockup-dark)",
+    mockupBg: "var(--project-mockup-light)",
     summary:
       "Clone Spotify en React avec API dédiée, conteneurisé via Docker pour un déploiement reproductible.",
     description: [

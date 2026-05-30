@@ -16,7 +16,7 @@ export function ThemeToggle() {
     return (
       <div
         aria-hidden
-        className="h-14 w-10 rounded-lg border border-border bg-card"
+        className="h-10 w-[4.5rem] rounded-lg border border-border bg-card"
       />
     );
   }
@@ -28,21 +28,31 @@ export function ThemeToggle() {
       type="button"
       onClick={() => setTheme(isDark ? "light" : "dark")}
       aria-label={isDark ? "Activer le mode clair" : "Activer le mode sombre"}
-      className="group relative flex flex-col items-center gap-1"
+      className="group relative flex items-center"
     >
-
       <motion.div
         className={cn(
-          "relative h-14 w-10 overflow-hidden rounded-lg border-2 border-border bg-muted shadow-inner",
+          "relative h-10 w-[4.5rem] overflow-hidden rounded-lg border-2 border-border bg-muted shadow-inner",
           "transition-shadow duration-300 group-hover:shadow-md group-focus-visible:ring-2 group-focus-visible:ring-primary group-focus-visible:ring-offset-2 group-focus-visible:ring-offset-background",
         )}
       >
-        <div className="absolute inset-x-1 top-1 bottom-1 rounded-md bg-card/80" />
+        <div className="absolute inset-y-1 inset-x-1 rounded-md bg-card/80" />
+
+        <div className="pointer-events-none absolute left-2.5 top-1/2 z-0 -translate-y-1/2 opacity-40">
+          <Sun className="h-3 w-3 text-muted-foreground" aria-hidden />
+        </div>
 
         <motion.div
-          className="absolute inset-x-1.5 z-10 flex h-6 items-center justify-center rounded-md bg-primary text-primary-foreground shadow-md"
+          className="pointer-events-none absolute right-2.5 top-1/2 z-0 -translate-y-1/2"
+          animate={{ opacity: isDark ? 0.9 : 0.25 }}
+        >
+          <Moon className="h-3 w-3 text-muted-foreground" aria-hidden />
+        </motion.div>
+
+        <motion.div
+          className="absolute inset-y-1.5 z-10 flex w-7 items-center justify-center rounded-md bg-primary text-primary-foreground shadow-md"
           initial={false}
-          animate={{ y: isDark ? 26 : 4 }}
+          animate={{ x: isDark ? 34 : 4 }}
           transition={{ type: "spring", stiffness: 500, damping: 32 }}
         >
           {isDark ? (
@@ -50,17 +60,6 @@ export function ThemeToggle() {
           ) : (
             <Sun className="h-3.5 w-3.5" aria-hidden />
           )}
-        </motion.div>
-
-        <motion.div className="pointer-events-none absolute inset-x-2 top-2 flex justify-center opacity-40">
-          <Sun className="h-2.5 w-2.5 text-muted-foreground" aria-hidden />
-        </motion.div>
-
-        <motion.div
-          className="pointer-events-none absolute inset-x-2 bottom-2 flex justify-center"
-          animate={{ opacity: isDark ? 0.9 : 0.25 }}
-        >
-          <Moon className="h-2.5 w-2.5 text-muted-foreground" aria-hidden />
         </motion.div>
       </motion.div>
     </button>
