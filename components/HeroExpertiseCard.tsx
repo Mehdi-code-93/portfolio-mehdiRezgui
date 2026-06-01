@@ -4,34 +4,45 @@ import { cn } from "@/lib/utils";
 
 type HeroExpertiseCardProps = {
   area: ExpertiseArea;
+  className?: string;
 };
 
 const offsetClass: Record<NonNullable<ExpertiseArea["offset"]>, string> = {
-  left: "mr-auto ml-0 max-w-[160px]",
-  right: "ml-auto mr-0 max-w-[160px]",
-  none: "mx-auto max-w-[160px]",
+  left: "lg:mr-auto lg:ml-0",
+  right: "lg:ml-auto lg:mr-0",
+  none: "lg:mx-auto",
 };
 
-export function HeroExpertiseCard({ area }: HeroExpertiseCardProps) {
+export function HeroExpertiseCard({ area, className }: HeroExpertiseCardProps) {
   const offset = area.offset ?? "none";
 
   return (
     <article
       className={cn(
-        "w-full rounded-2xl p-3",
+        "w-full max-w-[220px] sm:max-w-none",
         offsetClass[offset],
+        className,
       )}
     >
-      <div className="relative aspect-[16/12] overflow-hidden rounded-xl ring-4 ring-white shadow-[0_10px_30px_rgb(0,0,0,0.04)]">
+      <div
+        className="relative aspect-[16/12] overflow-hidden rounded-lg border-[3px] border-[var(--hero-expertise-ring)]"
+        style={{ boxShadow: "var(--hero-expertise-image-shadow)" }}
+      >
         <Image
           src={area.image}
           alt={area.imageAlt}
           fill
           className="object-cover object-top"
-          sizes="160px"
+          sizes="(max-width: 640px) 70vw, (max-width: 1024px) 25vw, 150px"
         />
       </div>
-      <p className="mt-3 p-2 py-2 text-center text-sm font-semibold bg-white rounded-lg ring-4 ring-white shadow-[0_15px_30px_rgb(0,0,0,0.07)] text-card-foreground">
+      <p
+        className="mt-2 rounded-md border-[3px] border-[var(--hero-expertise-ring)] px-2 py-1.5 text-center text-xs font-semibold text-card-foreground sm:text-sm"
+        style={{
+          backgroundColor: "var(--hero-expertise-label)",
+          boxShadow: "var(--hero-expertise-shadow)",
+        }}
+      >
         {area.title}
       </p>
     </article>
