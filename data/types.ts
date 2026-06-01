@@ -49,6 +49,16 @@ export type Passion = {
   description: string;
 };
 
+export type ExpertiseOffset = "left" | "right" | "none";
+
+export type ExpertiseArea = {
+  id: string;
+  title: string;
+  image: string;
+  imageAlt: string;
+  offset?: ExpertiseOffset;
+};
+
 export type Profile = {
   name: string;
   role: string;
