@@ -10,32 +10,37 @@ const navItems = [
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
-      <div className="mx-auto flex w-full max-w-[1400px] items-center justify-between px-6 py-4">
+    <header className="sticky top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur-md">
+      <div className="relative flex min-h-[4.5rem] w-full items-center px-4 sm:px-6">
         <Link
           href="/"
-          className="text-sm font-semibold tracking-tight text-foreground transition-opacity hover:opacity-80"
+          className="relative z-10 shrink-0 text-sm font-semibold tracking-tight text-foreground transition-opacity hover:opacity-80"
         >
           {profile.name.split(" ")[0]}
           <span className="text-primary">.</span>
         </Link>
 
         <nav
-          className="hidden items-center gap-8 md:flex"
+          className="absolute inset-0 hidden items-center justify-center md:flex"
           aria-label="Navigation principale"
         >
-          {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-            >
-              {item.label}
-            </Link>
-          ))}
+          <ul className="grid w-[min(100vw-8rem,18rem)] grid-cols-3 items-center sm:w-[20rem]">
+            {navItems.map((item) => (
+              <li key={item.href} className="text-center">
+                <Link
+                  href={item.href}
+                  className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </nav>
 
-        <ThemeToggle />
+        <div className="relative z-10 ml-auto shrink-0">
+          <ThemeToggle />
+        </div>
       </div>
     </header>
   );
