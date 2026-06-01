@@ -8,7 +8,7 @@ export function Hero() {
   return (
     <section
       id="accueil"
-      className="mx-auto grid max-w-6xl gap-12 px-6 pt-5 md:grid-cols-2 md:items-center"
+      className="mx-auto grid max-w-7xl gap-12 px-6 pt-5 md:grid-cols-3 md:items-center"
     >
       <div className="flex flex-col gap-6">
         <p className="text-sm font-medium uppercase tracking-widest text-primary">
@@ -68,6 +68,35 @@ export function Hero() {
             className="object-contain"
             sizes="(max-width: 768px)"
           />
+        </div>
+      </div>
+      <div className="bg-primary/10">
+        <div className="flex flex-col items-start gap-2 bg-primary rounded-full p-2">
+          <Image
+            src="/assets/imgNetflix1.jpeg"
+            alt="Netflix"
+            width={40}
+            height={40}
+          />
+          <span>Web developer</span>
+        </div>
+        <div className="flex flex-col items-end gap-2 bg-primary rounded-full p-2">
+          <Image
+            src="/assets/imgNetflix1.jpeg"
+            alt="Netflix"
+            width={40}
+            height={40}
+          />
+          <span>Web developer</span>
+        </div>
+        <div className="flex flex-col items-start gap-2 bg-primary rounded-full p-2">
+          <Image
+            src="/assets/imgNetflix1.jpeg"
+            alt="Netflix"
+            width={40}
+            height={40}
+          />
+          <span>Web developer</span>
         </div>
       </div>
     </section>

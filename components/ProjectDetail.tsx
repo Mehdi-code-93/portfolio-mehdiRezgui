@@ -130,7 +130,7 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
               {project.learnings.map((learning) => (
                 <li
                   key={learning}
-                  className="rounded-2xl border border-border bg-muted/40 p-5 text-sm leading-relaxed text-muted-foreground"
+                  className="rounded-2xl border border-border bg-card p-5 text-sm leading-relaxed text-muted-foreground"
                 >
                   {learning}
                 </li>
