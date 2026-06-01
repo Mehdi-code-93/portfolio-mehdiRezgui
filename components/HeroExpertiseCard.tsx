@@ -19,7 +19,7 @@ export function HeroExpertiseCard({ area, className }: HeroExpertiseCardProps) {
   return (
     <article
       className={cn(
-        "w-full max-w-[220px] sm:max-w-none",
+        "w-full max-w-[140px] sm:max-w-none",
         offsetClass[offset],
         className,
       )}

@@ -112,7 +112,7 @@ export function Hero() {
           <div
             className={cn(
               "relative",
-              "grid grid-cols-1 gap-5 sm:grid-cols-3 sm:gap-4",
+            "grid grid-cols-3 gap-2 sm:gap-4",
               "md:mx-auto md:max-w-3xl",
               "lg:mx-0 lg:flex lg:max-w-none lg:flex-col lg:gap-5",
             )}
@@ -126,7 +126,7 @@ export function Hero() {
               <div
                 key={area.id}
                 className={cn(
-                  "relative flex justify-center sm:px-1",
+                "relative flex justify-center px-0.5 sm:px-1",
                   "lg:block lg:justify-start lg:pl-6",
                   index === 1 && "lg:pl-10",
                 )}
@@ -137,7 +137,7 @@ export function Hero() {
                 />
                 <HeroExpertiseCard
                   area={area}
-                  className="sm:max-w-[140px] md:max-w-[150px] lg:max-w-[168px] xl:max-w-[180px]"
+                  className="sm:max-w-[120px] md:max-w-[130px] lg:max-w-[148px] xl:max-w-[160px]"
                 />
               </div>
             ))}
