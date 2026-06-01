@@ -32,7 +32,6 @@ export const profile: Profile = {
     },
   ],
   email: "contact@mehdirezgui.dev",
-  cvPath: "/assets/CV_2026-05-04_Mehdi_Rezgui_compressed.pdf",
-  // profileImage: "/profile.svg",
+  cvPath: "/assets/CV_2026-06-01_Mehdi_Rezgui.pdf",
   profileImage: "/assets/imageProfil2.png",
 };
