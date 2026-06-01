@@ -35,7 +35,7 @@ const layoutDefaults: Record<
   ProjectCellSize,
   { textAlign: ProjectTextAlign; imageAlign: ProjectImageAlign }
 > = {
-  large: { textAlign: "right", imageAlign: "left" },
+  large: { textAlign: "left", imageAlign: "left" },
   small: { textAlign: "center", imageAlign: "center" },
   full: { textAlign: "center", imageAlign: "center" },
 };
@@ -96,8 +96,8 @@ export function ProjectCard({ project, size }: ProjectCardProps) {
               size === "large" || size === "full"
                 ? "(max-width: 768px) 100vw, 66vw"
                 : "(max-width: 768px) 100vw, 33vw"
-            }
-          />
+}
+  />
         </div>
       </div>
     </motion.article>
