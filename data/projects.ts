@@ -8,7 +8,7 @@ export const projects: Project[] = [
     stack: "Java, SpringBoot, MySQL",
     repoUrl: "#",
     accent: "var(--project-restogenerator)",
-    image: "/assets/imgResto.jpeg",
+    image: "/assets/imgResto1.jpeg",
     mockupBg: "var(--project-mockup-light)",
     summary:
       "Générateur de sites web pour restaurants, pensé pour automatiser la création de pages vitrines élégantes à partir de données structurées.",
@@ -27,9 +27,9 @@ export const projects: Project[] = [
       "Importance de la validation métier dès la conception du back-end.",
     ],
     gallery: [
-      { src: "/assets/imgResto.jpeg", alt: "Page d'accueil Restorator" },
-      { src: "/assets/imgResto.jpeg", alt: "Interface d'administration" },
-      { src: "/assets/imgResto.jpeg", alt: "Aperçu mobile du site généré" },
+      { src: "/assets/imgProjects/restorator2.jpeg", alt: "Page d'accueil Restorator" },
+      { src: "/assets/imgProjects/restorator3.jpeg", alt: "Interface d'administration" },
+      { src: "/assets/imgProjects/restorator4.jpeg", alt: "Aperçu mobile du site généré" },
     ],
   },
   {
@@ -38,7 +38,7 @@ export const projects: Project[] = [
     stack: "React, API",
     repoUrl: "#",
     accent: "var(--project-mynetflix)",
-    image: "/assets/imgNetflix1.jpeg",
+    image: "/assets/imgNetflix3.jpeg",
     mockupBg: "var(--project-mockup-light)",
     summary:
       "Clone de Netflix développé en React, connecté à une API externe pour afficher catalogues, catégories et fiches de contenus.",
@@ -57,9 +57,9 @@ export const projects: Project[] = [
       "Design d'interfaces sombres accessibles et performantes.",
     ],
     gallery: [
-      { src: "/assets/imgNetflix1.jpeg", alt: "Grille d'accueil Newflix" },
-      { src: "/assets/imgNetflix1.jpeg", alt: "Carrousel de contenus" },
-      { src: "/assets/imgNetflix1.jpeg", alt: "Fiche détail d'un titre" },
+      { src: "/assets/imgProjects/newFlix2.jpeg", alt: "Grille d'accueil Newflix" },
+      { src: "/assets/imgProjects/newFlix3.jpeg", alt: "Carrousel de contenus" },
+      { src: "/assets/imgProjects/newFlix4.jpeg", alt: "Fiche détail d'un titre" },
     ],
   },
   {
@@ -68,7 +68,7 @@ export const projects: Project[] = [
     stack: "React Native, Api",
     repoUrl: "#",
     accent: "var(--project-mysnap)",
-    image: "/assets/imgSnap1.jpeg",
+    image: "/assets/imgSnap4.jpeg",
     mockupBg: "var(--project-mockup-light)",
     summary:
       "Application mobile inspirée de Snapchat, développée en React Native avec authentification et messagerie via API.",
@@ -87,9 +87,9 @@ export const projects: Project[] = [
       "Optimisation des images et des listes longues sur mobile.",
     ],
     gallery: [
-      { src: "/assets/imgSnap1.jpeg", alt: "Écran de connexion Snapap" },
-      { src: "/assets/imgSnap1.jpeg", alt: "Fil de stories" },
-      { src: "/assets/imgSnap1.jpeg", alt: "Interface de messagerie" },
+      { src: "/assets/imgProjects/snapap2.jpeg", alt: "Écran de connexion Snapap" },
+      { src: "/assets/imgProjects/snapap3.jpeg", alt: "Fil de stories" },
+      { src: "/assets/imgProjects/snapap4.jpeg", alt: "Interface de messagerie" },
     ],
   },
   {
@@ -98,7 +98,7 @@ export const projects: Project[] = [
     stack: "React, API, Docker",
     repoUrl: "#",
     accent: "var(--project-myspotify)",
-    image: "/assets/imgSpotify.jpeg",
+    image: "/assets/imgSpotify1.jpeg",
     mockupBg: "var(--project-mockup-light)",
     summary:
       "Clone Spotify en React avec API dédiée, conteneurisé via Docker pour un déploiement reproductible.",
@@ -117,9 +117,9 @@ export const projects: Project[] = [
       "Gestion de playlists et état utilisateur côté front React.",
     ],
     gallery: [
-      { src: "/assets/imgSpotify.jpeg", alt: "Accueil Spot Music" },
-      { src: "/assets/imgSpotify.jpeg", alt: "Vue bibliothèque et playlists" },
-      { src: "/assets/imgSpotify.jpeg", alt: "Grille d'artistes et albums" },
+      { src: "/assets/imgProjects/spotMusic2.jpeg", alt: "Accueil Spot Music" },
+      { src: "/assets/imgProjects/spotMusic4.jpeg", alt: "Vue bibliothèque et playlists" },
+      { src: "/assets/imgProjects/spotMusic3.jpeg", alt: "Grille d'artistes et albums" },
     ],
   },
 ];
