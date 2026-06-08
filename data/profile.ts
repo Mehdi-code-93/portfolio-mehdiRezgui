@@ -8,27 +8,33 @@ export const profile: Profile = {
     "Passionné par la conception de produits digitaux, j'allie réflexion UX et expertise technique. Mon objectif : transformer des besoins complexes en solutions intuitives, de l'interface jusqu'au code.",
   aboutTitle: "Ma démarche hybride",
   aboutParagraphs: [
-    "Ma force réside dans ma double vision : je comprends les enjeux UX et les contraintes techniques du développement. Cette approche me permet d'anticiper la faisabilité dès la phase de design pour livrer des produits cohérents et maintenables.",
-    "En dehors de mes projets, ma créativité est nourrie par mes passions : le sport pour la discipline, et la narration des mangas qui m'inspire une attention particulière portée aux détails et à l'expérience utilisateur dans tout ce que je conçois.",
+    "Ma force réside dans ma double vision : je comprends les enjeux UX et les contraintes techniques du développement. Cette approche me permet d'anticiper la faisabilité dès la phase de design pour livrer des produits cohérents, performants et maintenables.",
+    "En dehors de mes projets, ma créativité est nourrie par mes passions : le sport (tennis, handball), la lecture de mangas, et un vif intérêt pour l'entrepreneuriat. Cette curiosité m'amène à garder une veille technologique constante, toujours à l'affût de nouvelles façons d'améliorer l'expérience utilisateur et l'efficacité des solutions que je conçois.",
   ],
-  passions: [
+passions: [
     {
       id: "sport",
-      title: "Sport",
+      title: "Sport & Esprit d'équipe",
       description:
-        "Musculation, course à pied — la régularité et le dépassement guident ma façon d'aborder les projets.",
+        "Tennis, handball et musculation — le terrain et la salle m'enseignent la discipline, la persévérance et la force du collectif.",
     },
     {
       id: "manga",
-      title: "Mangas & culture JP",
+      title: "Mangas",
       description:
-        "One Piece, seinen, cinéma d'animation — une source infinie d'inspiration visuelle et narrative.",
+        "Lecteur passionné de mangas pour leur richesse narrative et visuelle, j'y puise une attention particulière portée au détail et à l'émotion.",
+    },
+    {
+      id: "entrepreneuriat",
+      title: "Entrepreneuriat",
+      description:
+        "Passionné par la création de valeur, j'aime explorer les mécanismes qui transforment une idée en un produit utile, pérenne et centré sur l'utilisateur.",
     },
     {
       id: "design-tech",
-      title: "Veille Design & Tech",
+      title: "Veille Tech & Design",
       description:
-        "J'explore les tendances UI/UX et les standards du Web moderne, avec un focus sur la performance, l'accessibilité et la qualité du code.",
+        "J'explore les tendances tech et design, avec un focus permanent sur la performance, l'accessibilité et la qualité du code.",
     },
   ],
   email: "contact@mehdirezgui.dev",
