@@ -12,7 +12,7 @@ export function Hero() {
   return (
     <section
       id="accueil"
-      className="mx-auto w-full max-w-[1400px] px-4 pb-14 pt-6 sm:px-6 md:pb-20 md:pt-8 lg:pb-24"
+      className="mx-auto w-full max-w-[1400px] px-4 pt-6 sm:px-6 md:pt-8"
     >
       <div
         className={cn(
