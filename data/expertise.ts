@@ -3,7 +3,7 @@ import type { ExpertiseArea } from "./types";
 export const expertiseAreas: ExpertiseArea[] = [
   {
     id: "web",
-    title: "Web Developer",
+    title: "Développeur Web",
     image: "/assets/imgMetier/web_2.jpeg",
     imageAlt: "Aperçu projet web",
     offset: "left",
@@ -17,7 +17,7 @@ export const expertiseAreas: ExpertiseArea[] = [
   },
   {
     id: "mobile",
-    title: "Mobile Developer",
+    title: "Développeur Mobile",
     image: "/assets/imgMetier/mobile_1.jpeg",
     imageAlt: "Aperçu projet mobile",
     offset: "left",
