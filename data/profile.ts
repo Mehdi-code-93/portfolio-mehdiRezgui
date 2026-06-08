@@ -5,10 +5,10 @@ export const profile: Profile = {
   role: "Développeur Full-Stack",
   tagline: "Je conçois des expériences web fluides, accessibles et maintenables.",
   heroDescription:
-    "Passionné par le craft logiciel, j'allie rigueur technique et sens du détail pour livrer des produits qui ont du sens — du prototype au déploiement.",
-  aboutTitle: "Au-delà du code",
+    "Passionné par la conception de produits digitaux, j'allie réflexion UX et expertise technique. Mon approche ? Transformer des besoins complexes en solutions intuitives, en m'assurant que chaque choix de design est aussi élégant visuellement que techniquement robuste.",
+  aboutTitle: "Au-delà du digitale",
   aboutParagraphs: [
-    "Quand je ne suis pas derrière mon éditeur, je recharge les batteries autour de passions qui nourrissent ma créativité et mon énergie au quotidien.",
+    "Quand je ne suis pas derrière mon écran, je recharge les batteries autour de passions qui nourrissent ma créativité et mon énergie au quotidien.",
     "Le sport m'apprend la discipline et la constance ; les mangas et la culture japonaise m'inspirent par leur narration et leur esthétique. Ces univers me rappellent qu'un bon produit, comme une bonne histoire, doit captiver dès les premières secondes.",
   ],
   passions: [
