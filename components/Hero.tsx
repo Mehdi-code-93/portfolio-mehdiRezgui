@@ -126,7 +126,7 @@ export function Hero() {
               <div
                 key={area.id}
                 className={cn(
-                "relative flex justify-center px-0.5 sm:px-1",
+                  "relative flex justify-center px-0.5 sm:px-1 h-full",
                   "lg:block lg:justify-start lg:pl-6",
                   index === 1 && "lg:pl-10",
                 )}

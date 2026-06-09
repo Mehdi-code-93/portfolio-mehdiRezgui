@@ -20,7 +20,7 @@ export function TechCarousel() {
   return (
     <section
       aria-label="Technologies maîtrisées"
-      className="border-y border-border bg-muted/50 py-10"
+      className="mt-12 sm:mt-0 border-y border-border bg-muted/50 py-10"
     >
       <div className="overflow-hidden">
         <div className="flex w-max animate-marquee gap-4">
